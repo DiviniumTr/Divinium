@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divinium – MMO Sci-Fi Indie</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      color: #f0f0f0;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* Fundo animado */
+    #stars, #stars2, #stars3 {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      display: block;
+      z-index: -1;
+    }
+
+    #stars {
+      background: transparent url('https://www.script-tutorials.com/demos/360/images/stars.png') repeat top center;
+      animation: moveStars 200s linear infinite;
+    }
+
+    #stars2 {
+      background: transparent url('https://www.script-tutorials.com/demos/360/images/stars2.png') repeat top center;
+      animation: moveStars 400s linear infinite;
+    }
+
+    #stars3 {
+      background: transparent url('https://www.script-tutorials.com/demos/360/images/stars3.png') repeat top center;
+      animation: moveStars 600s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from {background-position: 0 0;}
+      to {background-position: 10000px 5000px;}
+    }
+
+    header {
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+      color: #0ff;
+      text-shadow: 0 0 20px #0ff, 0 0 40px #00aaff;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+      color: #ddd;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #0ff;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 0 20px #0ff;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00aaff;
+      color: #fff;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #0ff;
+    }
+
+    .factions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .faction {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,255,255,0.3);
+    }
+
+    footer {
+      background: rgba(0,0,0,0.7);
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #0ff;
+      margin: 0 8px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Fundo animado -->
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+
+  <header>
+    <h1>DIVINIUM</h1>
+    <p>Um MMO Indie de Batalha e Exploração Espacial</p>
+    <a href="https://www.patreon.com/DiviniumTR" target="_blank" class="btn">Apoiar o Projeto</a>
+  </header>
+
+  <section>
+    <h2>O Jogo</h2>
+    <p>
+      Inspirado em clássicos como DarkOrbit e Battlestar Galactica, o Divinium traz
+      um universo único, com facções, naves e batalhas imersivas em tempo real.
+      Desenvolvido de forma independente por apenas uma pessoa – este é um sonho
+      que você pode ajudar a tornar realidade.
+    </p>
+  </section>
+
+  <section>
+    <h2>Facções</h2>
+    <div class="factions">
+      <div class="faction"><h3>⚙ Technomancers</h3><p>Mestres da fusão homem-máquina.</p></div>
+      <div class="faction"><h3>☀ Solaris Order</h3><p>Herdeiros das estrelas, poder religioso.</p></div>
+      <div class="faction"><h3>☠ Voidborn</h3><p>Sombras do espaço profundo.</p></div>
+      <div class="faction"><h3>🜏 Crimson Legion</h3><p>Guerreiros que vivem pela guerra.</p></div>
+      <div class="faction"><h3>⚛ Eclipse Syndicate</h3><p>Senhores do submundo galáctico.</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Divinium. Todos os direitos reservados.</p>
+    <p>
+      <a href="#">Discord</a> | 
+      <a href="#">YouTube</a> | 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+</body>
+</html>
