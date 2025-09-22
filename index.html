@@ -111,23 +111,113 @@
       box-shadow: 0 0 25px rgba(0,255,255,0.4);
     }
 
-    /* === FACÇÕES === */
-    .factions {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
-    }
-    .faction {
-      background: rgba(255,255,255,0.05);
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,255,255,0.2);
-    }
-    .faction h3 {
-      margin-bottom: 10px;
-      color: #00eaff;
-    }
+    <!-- FACÇÕES -->
+<section>
+  <h2>Facções</h2>
+  <div class="factions-detailed">
+
+    <!-- Technomancers -->
+    <div class="faction-card">
+      <div class="faction-header" style="background-image: url('images/background.png');">
+        <img src="images/emblema_technomancers.png" alt="Emblema Technomancers" class="faction-emblem">
+        <h3>⚙ Technomancers</h3>
+      </div>
+      <div class="faction-body">
+        <img src="images/general_techno.png" alt="General Technomancers" class="faction-general">
+        <p>Mestres da fusão homem-máquina, sobreviventes das Guerras Sintéticas.</p>
+      </div>
+    </div>
+
+    <!-- Solaris Order -->
+    <div class="faction-card">
+      <div class="faction-header" style="background-image: url('images/background.png');">
+        <img src="images/emblema_solaris_order.png" alt="Emblema Solaris Order" class="faction-emblem">
+        <h3>☀ Solaris Order</h3>
+      </div>
+      <div class="faction-body">
+        <img src="images/general_solaris.png" alt="General Solaris" class="faction-general">
+        <p>Herdeiros das primeiras expedições, acreditam na luz das estrelas como sagrada.</p>
+      </div>
+    </div>
+
+    <!-- Voidborn -->
+    <div class="faction-card">
+      <div class="faction-header" style="background-image: url('images/background.png');">
+        <img src="images/emblema_voidborn.png" alt="Emblema Voidborn" class="faction-emblem">
+        <h3>☠ Voidborn</h3>
+      </div>
+      <div class="faction-body">
+        <img src="images/general_void.png" alt="General Voidborn" class="faction-general">
+        <p>Descendentes do espaço profundo, adaptados à ausência de luz.</p>
+      </div>
+    </div>
+
+    <!-- Crimson Legion -->
+    <div class="faction-card">
+      <div class="faction-header" style="background-image: url('images/background.png');">
+        <img src="images/emblema_crimson.png" alt="Emblema Crimson Legion" class="faction-emblem">
+        <h3>🜏 Crimson Legion</h3>
+      </div>
+      <div class="faction-body">
+        <img src="images/general_crimson.png" alt="General Crimson" class="faction-general">
+        <p>Guerreiros nômades que acreditam que a guerra é o verdadeiro valor.</p>
+      </div>
+    </div>
+
+    <!-- Eclipse Syndicate -->
+    <div class="faction-card">
+      <div class="faction-header" style="background-image: url('images/background.png');">
+        <img src="images/emblema_eclipse_syndicate.png" alt="Emblema Eclipse Syndicate" class="faction-emblem">
+        <h3>⚛ Eclipse Syndicate</h3>
+      </div>
+      <div class="faction-body">
+        <img src="images/general_eclipse.png" alt="General Eclipse Syndicate" class="faction-general">
+        <p>Uma organização criminosa interplanetária, mestres em pirataria e espionagem.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+.factions-detailed {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.faction-card {
+  background: rgba(0,0,0,0.7);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,234,255,0.3);
+  overflow: hidden;
+  text-align: center;
+}
+
+.faction-header {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+.faction-emblem {
+  width: 60px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 8px #00eaff);
+}
+
+.faction-body {
+  padding: 20px;
+}
+
+.faction-general {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 15px rgba(0,234,255,0.4));
+}
+
 
     /* === MOEDAS === */
     .currencies {
@@ -250,3 +340,4 @@
   </footer>
 </body>
 </html>
+
