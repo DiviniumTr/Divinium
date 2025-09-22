@@ -14,6 +14,33 @@
       background-size: cover;
       color: #f0f0f0;
       text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* ====== Camadas de estrelas animadas ====== */
+    #stars, #stars2, #stars3 {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      background: transparent;
+      pointer-events: none;
+    }
+    #stars {
+      background: url("https://www.script-tutorials.com/demos/360/images/stars.png") repeat;
+      animation: animStars 200s linear infinite;
+    }
+    #stars2 {
+      background: url("https://www.script-tutorials.com/demos/360/images/stars2.png") repeat;
+      animation: animStars 400s linear infinite;
+    }
+    #stars3 {
+      background: url("https://www.script-tutorials.com/demos/360/images/stars3.png") repeat;
+      animation: animStars 600s linear infinite;
+    }
+    @keyframes animStars {
+      from { background-position: 0 0; }
+      to { background-position: 10000px 5000px; }
     }
 
     header {
@@ -103,6 +130,11 @@
   </style>
 </head>
 <body>
+
+  <!-- Fundo dinâmico de estrelas -->
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
 
   <header>
     <img src="images/logo.png" alt="Divinium Logo">
