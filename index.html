@@ -26,250 +26,84 @@
       background: transparent;
       pointer-events: none;
     }
-    #stars {
-      background: url("https://www.script-tutorials.com/demos/360/images/stars.png") repeat;
-      animation: animStars 200s linear infinite;
-    }
-    #stars2 {
-      background: url("https://www.script-tutorials.com/demos/360/images/stars2.png") repeat;
-      animation: animStars 400s linear infinite;
-    }
-    #stars3 {
-      background: url("https://www.script-tutorials.com/demos/360/images/stars3.png") repeat;
-      animation: animStars 600s linear infinite;
-    }
-    @keyframes animStars {
-      from { background-position: 0 0; }
-      to { background-position: 10000px 5000px; }
-    }
+    #stars { background: url("https://www.script-tutorials.com/demos/360/images/stars.png") repeat; animation: animStars 200s linear infinite; }
+    #stars2 { background: url("https://www.script-tutorials.com/demos/360/images/stars2.png") repeat; animation: animStars 400s linear infinite; }
+    #stars3 { background: url("https://www.script-tutorials.com/demos/360/images/stars3.png") repeat; animation: animStars 600s linear infinite; }
+    @keyframes animStars { from { background-position: 0 0; } to { background-position: 10000px 5000px; } }
 
     /* === HEADER === */
-    header {
-      padding: 100px 20px;
-      background: rgba(0,0,0,0.7);
-    }
-    header img {
-      max-width: 280px;
-      margin-bottom: 20px;
-    }
-    header h1 {
-      font-size: 3.5rem;
-      color: #00eaff;
-      text-shadow: 0 0 20px #00eaff, 0 0 40px #0077ff;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin: 10px 0 25px 0;
-    }
+    header { padding: 100px 20px; background: rgba(0,0,0,0.7); }
+    header img { max-width: 280px; margin-bottom: 20px; }
+    header h1 { font-size: 3.5rem; color: #00eaff; text-shadow: 0 0 20px #00eaff, 0 0 40px #0077ff; }
+    header p { font-size: 1.2rem; margin: 10px 0 25px 0; }
     .btn-download {
-      display: inline-block;
-      padding: 16px 36px;
+      display: inline-block; padding: 16px 36px;
       background: linear-gradient(90deg, #00eaff, #0077ff);
-      color: #000;
-      font-weight: bold;
-      border-radius: 10px;
-      text-decoration: none;
-      font-size: 1.2rem;
+      color: #000; font-weight: bold; border-radius: 10px;
+      text-decoration: none; font-size: 1.2rem;
       box-shadow: 0 0 20px #00eaff;
       transition: transform 0.2s, background 0.3s;
     }
-    .btn-download:hover { 
-      transform: scale(1.05); 
-      background: linear-gradient(90deg, #0077ff, #00eaff);
-      color: #fff; 
-    }
+    .btn-download:hover { transform: scale(1.05); background: linear-gradient(90deg, #0077ff, #00eaff); color: #fff; }
 
     /* === SEÇÕES === */
-    section {
-      padding: 80px 20px;
-      background: rgba(0,0,0,0.6);
-      margin: 40px auto;
-      border-radius: 15px;
-      max-width: 1100px;
-      box-shadow: 0 0 30px rgba(0, 234, 255, 0.2);
-    }
-    section h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #00eaff;
-      text-shadow: 0 0 15px #00eaff;
-    }
-    section p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      color: #ddd;
-      margin-bottom: 20px;
-    }
+    section { padding: 80px 20px; background: rgba(0,0,0,0.6); margin: 40px auto; border-radius: 15px; max-width: 1100px; box-shadow: 0 0 30px rgba(0, 234, 255, 0.2); }
+    section h2 { font-size: 2.5rem; margin-bottom: 20px; color: #00eaff; text-shadow: 0 0 15px #00eaff; }
+    section p { font-size: 1.1rem; line-height: 1.6; color: #ddd; margin-bottom: 20px; }
 
     /* === TRAILER === */
-    .trailer iframe {
-      width: 100%;
-      max-width: 900px;
-      height: 500px;
-      border: none;
-      border-radius: 12px;
-      box-shadow: 0 0 25px rgba(0,255,255,0.4);
-    }
+    .trailer iframe { width: 100%; max-width: 900px; height: 500px; border: none; border-radius: 12px; box-shadow: 0 0 25px rgba(0,255,255,0.4); }
 
-    <!-- FACÇÕES -->
-<section>
-  <h2>Facções</h2>
-  <div class="factions-detailed">
-
-    <!-- Technomancers -->
-    <div class="faction-card">
-      <div class="faction-header" style="background-image: url('images/background.png');">
-        <img src="images/emblema_technomancers.png" alt="Emblema Technomancers" class="faction-emblem">
-        <h3>⚙ Technomancers</h3>
-      </div>
-      <div class="faction-body">
-        <img src="images/general_techno.png" alt="General Technomancers" class="faction-general">
-        <p>Mestres da fusão homem-máquina, sobreviventes das Guerras Sintéticas.</p>
-      </div>
-    </div>
-
-    <!-- Solaris Order -->
-    <div class="faction-card">
-      <div class="faction-header" style="background-image: url('images/background.png');">
-        <img src="images/emblema_solaris_order.png" alt="Emblema Solaris Order" class="faction-emblem">
-        <h3>☀ Solaris Order</h3>
-      </div>
-      <div class="faction-body">
-        <img src="images/general_solaris.png" alt="General Solaris" class="faction-general">
-        <p>Herdeiros das primeiras expedições, acreditam na luz das estrelas como sagrada.</p>
-      </div>
-    </div>
-
-    <!-- Voidborn -->
-    <div class="faction-card">
-      <div class="faction-header" style="background-image: url('images/background.png');">
-        <img src="images/emblema_voidborn.png" alt="Emblema Voidborn" class="faction-emblem">
-        <h3>☠ Voidborn</h3>
-      </div>
-      <div class="faction-body">
-        <img src="images/general_void.png" alt="General Voidborn" class="faction-general">
-        <p>Descendentes do espaço profundo, adaptados à ausência de luz.</p>
-      </div>
-    </div>
-
-    <!-- Crimson Legion -->
-    <div class="faction-card">
-      <div class="faction-header" style="background-image: url('images/background.png');">
-        <img src="images/emblema_crimson.png" alt="Emblema Crimson Legion" class="faction-emblem">
-        <h3>🜏 Crimson Legion</h3>
-      </div>
-      <div class="faction-body">
-        <img src="images/general_crimson.png" alt="General Crimson" class="faction-general">
-        <p>Guerreiros nômades que acreditam que a guerra é o verdadeiro valor.</p>
-      </div>
-    </div>
-
-    <!-- Eclipse Syndicate -->
-    <div class="faction-card">
-      <div class="faction-header" style="background-image: url('images/background.png');">
-        <img src="images/emblema_eclipse_syndicate.png" alt="Emblema Eclipse Syndicate" class="faction-emblem">
-        <h3>⚛ Eclipse Syndicate</h3>
-      </div>
-      <div class="faction-body">
-        <img src="images/general_eclipse.png" alt="General Eclipse Syndicate" class="faction-general">
-        <p>Uma organização criminosa interplanetária, mestres em pirataria e espionagem.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-.factions-detailed {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.faction-card {
-  background: rgba(0,0,0,0.7);
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,234,255,0.3);
-  overflow: hidden;
-  text-align: center;
-}
-
-.faction-header {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  padding: 20px;
-}
-
-.faction-emblem {
-  width: 60px;
-  margin-bottom: 10px;
-  filter: drop-shadow(0 0 8px #00eaff);
-}
-
-.faction-body {
-  padding: 20px;
-}
-
-.faction-general {
-  width: 100%;
-  max-width: 200px;
-  border-radius: 10px;
-  margin-bottom: 12px;
-  filter: drop-shadow(0 0 15px rgba(0,234,255,0.4));
-}
-
-
-    /* === MOEDAS === */
-    .currencies {
-      display: flex;
-      justify-content: center;
-      gap: 60px;
-      flex-wrap: wrap;
+    /* === FACÇÕES === */
+    .factions-detailed {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
       margin-top: 40px;
     }
-    .currency {
+    .faction-card {
+      background: rgba(0,0,0,0.7);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,234,255,0.3);
+      overflow: hidden;
       text-align: center;
     }
-    .currency img {
-      max-width: 160px;
-      margin-bottom: 12px;
-      filter: drop-shadow(0 0 15px rgba(0,234,255,0.6));
+    .faction-header {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      padding: 20px;
     }
-    .currency h3 {
-      font-size: 1.4rem;
-      color: #00eaff;
+    .faction-emblem { width: 60px; margin-bottom: 10px; filter: drop-shadow(0 0 8px #00eaff); }
+    .faction-body { padding: 20px; }
+    .faction-general {
+      width: 100%; max-width: 200px;
+      border-radius: 10px; margin-bottom: 12px;
+      filter: drop-shadow(0 0 15px rgba(0,234,255,0.4));
     }
 
+    /* === MOEDAS === */
+    .currencies { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; margin-top: 40px; }
+    .currency { text-align: center; }
+    .currency img { max-width: 160px; margin-bottom: 12px; filter: drop-shadow(0 0 15px rgba(0,234,255,0.6)); }
+    .currency h3 { font-size: 1.4rem; color: #00eaff; }
+
     /* === FOOTER === */
-    footer {
-      background: rgba(0,0,0,0.85);
-      padding: 25px;
-      font-size: 0.9rem;
-      color: #aaa;
-      margin-top: 60px;
-    }
-    footer a {
-      color: #00eaff;
-      margin: 0 8px;
-      text-decoration: none;
-    }
+    footer { background: rgba(0,0,0,0.85); padding: 25px; font-size: 0.9rem; color: #aaa; margin-top: 60px; }
+    footer a { color: #00eaff; margin: 0 8px; text-decoration: none; }
     footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
   <!-- FUNDO ANIMADO -->
-  <div id="stars"></div>
-  <div id="stars2"></div>
-  <div id="stars3"></div>
+  <div id="stars"></div><div id="stars2"></div><div id="stars3"></div>
 
   <!-- HEADER -->
   <header>
     <img src="images/logo.png" alt="Divinium Logo">
     <h1>DIVINIUM</h1>
     <p>Um MMO Indie de Batalha e Exploração Espacial</p>
-    <a href="https://github.com/Omplyse/Divinium/releases/latest/download/Divinium_Launcher.zip" class="btn-download" target="_blank">
-      ⬇ Download do Launcher
-    </a>
+    <a href="https://github.com/Omplyse/Divinium/releases/latest/download/Divinium_Launcher.zip" class="btn-download" target="_blank">⬇ Download do Launcher</a>
   </header>
 
   <!-- TRAILER -->
@@ -280,30 +114,76 @@
     </div>
   </section>
 
-  <!-- SOBRE O JOGO -->
+  <!-- SOBRE -->
   <section>
     <h2>O Jogo</h2>
-    <p>
-      Inspirado em clássicos como DarkOrbit e Battlestar Galactica, o Divinium traz
-      um universo único, com facções, naves e batalhas imersivas em tempo real.
-      Desenvolvido de forma independente por apenas uma pessoa – este é um sonho
-      que você pode ajudar a tornar realidade.
-    </p>
+    <p>Inspirado em clássicos como DarkOrbit e Battlestar Galactica, o Divinium traz um universo único, com facções, naves e batalhas imersivas em tempo real. Desenvolvido de forma independente por apenas uma pessoa – este é um sonho que você pode ajudar a tornar realidade.</p>
   </section>
 
-  <!-- FACÇÕES -->
+  <!-- FACÇÕES DETALHADAS -->
   <section>
     <h2>Facções</h2>
-    <div class="factions">
-      <div class="faction"><h3>⚙ Technomancers</h3><p>Mestres da fusão homem-máquina.</p></div>
-      <div class="faction"><h3>☀ Solaris Order</h3><p>Herdeiros das estrelas, poder religioso.</p></div>
-      <div class="faction"><h3>☠ Voidborn</h3><p>Sombras do espaço profundo.</p></div>
-      <div class="faction"><h3>🜏 Crimson Legion</h3><p>Guerreiros que vivem pela guerra.</p></div>
-      <div class="faction"><h3>⚛ Eclipse Syndicate</h3><p>Senhores do submundo galáctico.</p></div>
+    <div class="factions-detailed">
+
+      <div class="faction-card">
+        <div class="faction-header" style="background-image: url('images/background.png');">
+          <img src="images/emblema_technomancers.png" class="faction-emblem">
+          <h3>⚙ Technomancers</h3>
+        </div>
+        <div class="faction-body">
+          <img src="images/general_techno.png" class="faction-general">
+          <p>Mestres da fusão homem-máquina, sobreviventes das Guerras Sintéticas.</p>
+        </div>
+      </div>
+
+      <div class="faction-card">
+        <div class="faction-header" style="background-image: url('images/background.png');">
+          <img src="images/emblema_solaris_order.png" class="faction-emblem">
+          <h3>☀ Solaris Order</h3>
+        </div>
+        <div class="faction-body">
+          <img src="images/general_solaris.png" class="faction-general">
+          <p>Herdeiros das primeiras expedições, acreditam na luz das estrelas como sagrada.</p>
+        </div>
+      </div>
+
+      <div class="faction-card">
+        <div class="faction-header" style="background-image: url('images/background.png');">
+          <img src="images/emblema_voidborn.png" class="faction-emblem">
+          <h3>☠ Voidborn</h3>
+        </div>
+        <div class="faction-body">
+          <img src="images/general_void.png" class="faction-general">
+          <p>Descendentes do espaço profundo, adaptados à ausência de luz.</p>
+        </div>
+      </div>
+
+      <div class="faction-card">
+        <div class="faction-header" style="background-image: url('images/background.png');">
+          <img src="images/emblema_crimson.png" class="faction-emblem">
+          <h3>🜏 Crimson Legion</h3>
+        </div>
+        <div class="faction-body">
+          <img src="images/general_crimson.png" class="faction-general">
+          <p>Guerreiros nômades que acreditam que a guerra é o verdadeiro valor.</p>
+        </div>
+      </div>
+
+      <div class="faction-card">
+        <div class="faction-header" style="background-image: url('images/background.png');">
+          <img src="images/emblema_eclipse_syndicate.png" class="faction-emblem">
+          <h3>⚛ Eclipse Syndicate</h3>
+        </div>
+        <div class="faction-body">
+          <img src="images/general_eclipse.png" class="faction-general">
+          <p>Uma organização criminosa interplanetária, mestres em pirataria e espionagem.</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- MOEDAS -->
+  <!-- ECONOMIA -->
   <section>
     <h2>Economia</h2>
     <div class="currencies">
@@ -321,10 +201,7 @@
   <!-- APOIO -->
   <section>
     <h2>Apoie o Projeto</h2>
-    <p>
-      O Divinium é um sonho indie desenvolvido por apenas uma pessoa.  
-      Você pode ajudar a manter o universo vivo e receber recompensas exclusivas como apoiador fundador.
-    </p>
+    <p>O Divinium é um sonho indie desenvolvido por apenas uma pessoa. Você pode ajudar a manter o universo vivo e receber recompensas exclusivas como apoiador fundador.</p>
     <a href="https://www.patreon.com/DiviniumTR" target="_blank" class="btn-download">🔥 Apoiar no Patreon</a>
   </section>
 
@@ -340,4 +217,3 @@
   </footer>
 </body>
 </html>
-
